@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
     document.body.appendChild(p)
 
     p.addEventListener('click', function () {
-        let colorChange = ['Purple', '', 'Yellow', 'blue', 'black', 'brown', 'green', 'Red'];
+        let colorChange = ['purple', 'white', 'yellow', 'blue', 'black', 'brown', 'green', 'red'];
         let randomIndex = Math.floor(Math.random() * colorChange.length)
         p.style.color = colorChange[randomIndex];
         p.style.cursor = 'pointer';
