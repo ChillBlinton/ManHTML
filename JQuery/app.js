@@ -1,3 +1,5 @@
+
+//move listbelow
 let $ul = $('#ul')
 $listBtn.click(function()   {
     let $randomFriend = Math.floor(Math.random() * $friends.length)
@@ -18,11 +20,16 @@ $(document).ready(function (){
         alert('Hiya my dood')
     });
     
+
+//button
+
     let htmlButton = $('#htmlButton')
     htmlButton.click(function() {
         alert($('#textBox').val())
     });
     
+
+
     //change background color
     let $colorDiv = $('#div1')
     $colorDiv.mouseenter(function() {

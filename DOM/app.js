@@ -7,9 +7,10 @@ document.addEventListener('DOMContentLoaded', function (event) {
     btn.appendChild(btnText)
     document.body.appendChild(btn)
 
-    btn.addEventListener('click', function () {
-        alert('Nice Message Brah')
-    });
+
+    //btn.addEventListener('click', function () {
+      //  alert('Nice Message Brah')
+    //});
 
 
     let htmlButton = document.getElementById('htmlButton');
@@ -20,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
     });
 
+    //color change brah
     let colorDiv = document.getElementById('div1')
     colorDiv.addEventListener('mouseenter', function () {
         colorDiv.style.backgroundColor = 'red';
@@ -30,13 +32,14 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
     });
 
+    //drop that graph
     let p = document.createElement('p')
     let pTxt = document.createTextNode('Paragraphing out')
     p.appendChild(pTxt)
     document.body.appendChild(p)
 
     p.addEventListener('click', function () {
-        let colorChange = ['Green', 'Pink', 'Yellow', 'blue', 'black', 'brown', 'purple', 'Red'];
+        let colorChange = ['Purple', '', 'Yellow', 'blue', 'black', 'brown', 'green', 'Red'];
         let randomIndex = Math.floor(Math.random() * colorChange.length)
         p.style.color = colorChange[randomIndex];
         p.style.cursor = 'pointer';
